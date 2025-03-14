@@ -6,6 +6,7 @@
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
 #container .container_box {
   width: 60%;
   margin: auto;
@@ -14,13 +15,16 @@
   justify-content: space-between;
   align-items: center;
 }
+
 #container .container_box .INDEX {
   font-size: 20px;
 }
+
 #container .container_box .INDEX a {
   text-decoration: none;
   color: inherit;
 }
+
 #container .container_box ul {
   list-style: none;
   display: flex;
@@ -29,21 +33,33 @@
   text-transform: uppercase;
   letter-spacing: 0.0625em;
 }
+
 #container .container_box ul a {
   color: inherit;
   text-decoration: none;
 }
+#container .container_box button{
+  display: none;
+  padding: 12px 20px;
+  background-color: white;
+  color: gray;
+  border: 1px solid gray;
+  font-size: 16px;
+  font-weight: 700;
+}
+#container .container_box button i{
+  margin-left: 4px;
+}
+
 /* nav container end!  */
 
 /*clean section start!*/
 #clean {
   max-width: 100%;
   height: 60vh;
-  background-image: linear-gradient(
-      0deg,
+  background-image: linear-gradient(0deg,
       rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
+      rgba(0, 0, 0, 0.5)),
     url(https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/home-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -55,20 +71,24 @@
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
 #clean .clean_blog {
   text-align: center;
   color: white;
 }
+
 #clean .clean_blog h1 {
   font-size: 80px;
   font-weight: 800;
   line-height: 1.2;
 }
+
 #clean .clean_blog p {
   font-size: 24px;
   line-height: 1.1;
   font-weight: 300;
 }
+
 /*clean section end!*/
 
 /* section explore start! */
@@ -85,6 +105,7 @@
   margin: auto;
   margin-top: 3.5rem;
 }
+
 #explore .explore_box h2 {
   font-size: 2.25rem;
   font-weight: 800;
@@ -92,69 +113,395 @@
   padding: 1rem 0;
   cursor: pointer;
 }
+
 #explore .explore_box h3 {
   font-size: 28px;
   font-weight: 300;
   line-height: 1.2;
   padding-bottom: 1rem;
 }
+
 #explore .explore_box p {
   font-size: 18px;
   font-style: italic;
   color: #6c757d;
 }
-#explore .explore_box p span{
-      font-size: 18px;
-      font-style: normal;
-      color: #000;
-      cursor: pointer;
-    }
+
+#explore .explore_box p span {
+  font-size: 18px;
+  font-style: normal;
+  color: #000;
+  cursor: pointer;
+}
+
 #explore .explore_box hr {
-      border-color: #dee2e6;
-      opacity: 0.3;
+  border-color: #dee2e6;
+  opacity: 0.3;
   margin-top: 1.5rem;
 }
+
 #explore .explore_box .button {
-      margin: 2rem 0;
-      display: flex;
-      justify-content: end;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: end;
 }
-#explore .explore_box .button button{
-      padding: 16px 28px;
-      letter-spacing: 0.0625em;
-      background-color: #0085A1;
-      color: #ffffff;
-      border: none;
-      font-weight: 800;
+
+#explore .explore_box .button button {
+  padding: 16px 28px;
+  letter-spacing: 0.0625em;
+  background-color: #0085A1;
+  color: #ffffff;
+  border: none;
+  font-weight: 800;
 }
+
 /* section explore end! */
 
 /*  footer start!  */
 
-#footer{
-      max-width: 100%;
-      height: 72px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+#footer {
+  max-width: 100%;
+  height: 120px;
+  padding-top: 2rem;
 }
-#footer .footer_box{
-      max-width: 60%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: auto;
-      border: 2px solid red;
+
+#footer .footer_box {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#footer .footer_box .twitter_box{
-      width: 40px;
-      border-radius: 50%;
-      font-size: 1.3~~rem;
-      border: 2px solid red;
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      background-color: black;
+
+#footer .footer_box .twitter_box {
+  width: 40px;
+  margin: 1rem 1rem;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+}
+
+#footer .text_box {
+  text-align: center;
+  padding-bottom: 2.5rem;
+  color: #6c757d;
+  font-style: italic;
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: Lora, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+/*  this section start!  */
+#this {
+  max-width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url(https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/about-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+#this .this_blog {
+  text-align: center;
+  color: white;
+}
+
+#this .this_blog h1 {
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+#this .this_blog p {
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 300;
+}
+/*  this section end!  */
+/* lorem section start! */
+#lorem{
+  width: 100%;
+}
+#lorem .lorem_box{
+  padding: 2rem 0 2rem 0;
+  max-width: 47%;
+  margin: auto;
+}
+#lorem .lorem_box p{
+  margin: 2rem 0;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  color: #212529;
+  font-family: Lora, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+#lorem hr {
+  border-color: #dee2e6;
+  opacity: 0.3;
+}
+/* lorem section end! */
+
+/* post section start! */
+#post {
+  max-width: 100%;
+  height: 88.5vh;
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url(https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/post-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+#post .post_blog {
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  color: white;
+}
+
+#post .post_blog h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+#post .post_blog p {
+  font-size: 30px;
+  line-height: 1.1;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+#post .post_blog span {
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+/* post section end! */
+/*  never section start!  */
+#never{
+  width: 100%;
+}
+#never .never_box{
+  width: 47%;
+  margin:2.2rem auto;
+  font-size: 20px;
+  font-family: Lora, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+}
+#never h2{                                               
+   margin: auto;
+    width: 47%;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+#never #dream{
+  margin: auto;
+  width: 47%;
+  display: block;
+  font-size: 20px;
+  color: #6c757d;
+  font-style: italic;
+}
+#never h3{                                               
+  margin: auto;
+   width: 47%;
+   font-size: 36px;
+   font-weight: 700;
+   line-height: 1.2;
+   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+#never .img_box{
+  width: 650px;
+  height: 400px;
+  margin: auto;
+}
+#never .img_box img{
+  width: 100%;
+  height: 100%;
+}
+#never .img_box .img{
+  font-size: 0.875rem;
+  font-style: italic;
+  color: #6c757d;
+  display: block;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+#never .never_box a{
+  color: inherit;
+}
+#never hr {
+  border-color: #dee2e6;
+  opacity: 0.3;
+}
+/*  never section end!  */
+
+/*  contact section start! */
+#contact {
+  max-width: 100%;
+  height: 72vh;
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url(	https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/contact-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#contact .contact_box {
+  text-align: center;
+  color: white;
+}
+
+#contact .contact_box h1 {
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+#contact .contact_box p {
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 300;
+}
+/* contact section end! */
+/* want section start! */
+#want{
+  width: 100%;
+}
+#want h5{
+font-size: 20px;
+font-family: Lora, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+font-weight: 400;
+line-height: 1.5;
+color: #212529;
+width: 48%;
+margin:3rem auto;
+}
+#want #input{
+  display: block;
+  width: 48%;
+  margin: auto;
+  padding: 20px 0;
+  line-height: 1.25;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Lora, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  border: none;
+  border-bottom: 1px solid rgb(202, 201, 201);
+}
+#want textarea{
+  display: block;
+  width: 48%;
+  margin: auto;
+  padding: 20px 0 80px 0;
+  line-height: 1.25;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Lora, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+
+  border: none;
+  border-bottom: 1px solid gray;
+}
+#want #button{
+  width: 48%;
+  margin: 2rem auto;
+}
+#want button{
+  padding: 12px 20px;
+  letter-spacing: 0.0625em;
+  background-color: #0085A1;
+  color: #ffffff;
+  border: none;
+  font-weight: 800;
+}
+ #want hr {
+  border-color: #dee2e6;
+  opacity: 0.3;
+  margin-top: 1.5rem;
+}  
+
+
+@media only screen and (max-width:600px){
+  #container .container_box {
+    width: 90%;
+  }
+  #container .container_box button{
+    display: block;
+  }
+  #container .container_box ul {
+    display: none;
+  }
+  #explore .explore_box {
+    max-width: 80%;
+  }
+  #footer .footer_box {
+    width: 100%;
+  }
+  #lorem .lorem_box{
+    max-width: 90%;
+  } 
+  #post .post_blog {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    color: white;
+  }
+  #never .never_box{
+    width: 70%;
+  }
+}
+@media (min-width:601px) and (max-width:992px){
+  #container .container_box {
+    width: 95%;
+  }
+  #container .container_box button{
+    display: block;
+  }
+  #container .container_box ul {
+    display: none;
+  }
+  #explore .explore_box {
+    max-width: 90%;
+  }
+  #footer .footer_box {
+    width: 100%;
+  }
+  #lorem .lorem_box{
+    max-width: 90%;
+  } 
 }
